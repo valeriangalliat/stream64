@@ -19,8 +19,9 @@ function group (size, chunk) {
 }
 
 // Chunk by given size and call the transform function to stream data.
-const mkTransform = (size, transform) => (extra=null) =>
+const mkTransform = (encoding, size, transform) => (extra=null) =>
   through(
+    { encoding },
     chunk => {
       ;[extra, chunk] = [empty, concat(extra, chunk)]
       ;[extra, chunk] = group(size, chunk)
@@ -30,5 +31,5 @@ const mkTransform = (size, transform) => (extra=null) =>
     () => extra && transform(extra)
   )
 
-exports.encode = mkTransform(3, x => x.toString('base64'))
-exports.decode = mkTransform(4, x => new Buffer(x.toString(), 'base64'))
+exports.encode = mkTransform('ascii', 3, x => x.toString('base64'))
+exports.decode = mkTransform(null, 4, x => new Buffer(x.toString(), 'base64'))

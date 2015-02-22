@@ -13,7 +13,7 @@ const s1 = stream()
 
 s1
   .pipe(stream64.encode())
-  .pipe(concat(output => assert.equal(output.toString(), 'SGVsbG8sIHdvcmxkIQo=')))
+  .pipe(concat(output => assert.equal(output, 'SGVsbG8sIHdvcmxkIQo=')))
 
 s1.push('Hello, ')
 s1.push('world!\n')
