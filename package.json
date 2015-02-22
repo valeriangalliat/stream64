@@ -1,0 +1,30 @@
+{
+  "name": "stream64",
+  "version": "0.1.0",
+  "description": "Base64 encode/decode stream.",
+  "license": {
+    "type": "Unlicense",
+    "url": "http://unlicense.org/"
+  },
+  "author": {
+    "name": "Valérian Galliat",
+    "url": "http://val.codejam.info/"
+  },
+  "homepage": "https://github.com/valeriangalliat/stream64",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeriangalliat/stream64"
+  },
+  "dependencies": {
+    "through2-sync": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel": "^4.4.5",
+    "concat-stream": "^1.4.7"
+  },
+  "scripts": {
+    "build": "babel index.es6.js -o index.js",
+    "prepublish": "$npm_package_scripts_build",
+    "test": "$npm_package_scripts_build && babel-node test.js"
+  }
+}
