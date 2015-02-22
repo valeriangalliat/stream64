@@ -1,6 +1,6 @@
 {
   "name": "stream64",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Base64 encode/decode stream.",
   "license": {
     "type": "Unlicense",
@@ -10,6 +10,11 @@
     "name": "Valérian Galliat",
     "url": "http://val.codejam.info/"
   },
+  "files": [
+    "index.js",
+    "README.md",
+    "UNLICENSE"
+  ],
   "homepage": "https://github.com/valeriangalliat/stream64",
   "repository": {
     "type": "git",
