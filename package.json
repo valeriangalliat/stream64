@@ -1,6 +1,6 @@
 {
   "name": "stream64",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Base64 encode/decode stream.",
   "license": {
     "type": "Unlicense",
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/valeriangalliat/stream64",
   "repository": {
     "type": "git",
-    "url": "https://github.com/valeriangalliat/stream64"
+    "url": "https://github.com/valeriangalliat/stream64.git"
   },
   "dependencies": {
     "through2-sync": "^0.1.0"
