@@ -1,6 +1,6 @@
 {
   "name": "stream64",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Base64 encode/decode stream.",
   "license": "Unlicense",
   "author": {
